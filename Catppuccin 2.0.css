@@ -1,0 +1,252 @@
+/* Catppuccin 2.0 - Modified Primary Color to #2eb8b8 */
+
+/* 🌻Latte */
+.light, [data-theme="light"] {
+    /* Base colors */
+    --heroui-background: 220 23% 95% !important; /* Base */
+    --heroui-foreground: 234 16% 35% !important; /* Text */
+
+    /* Foreground scale */
+    --heroui-foreground-50: 220 21% 89% !important; /* Crust */
+    --heroui-foreground-100: 220 22% 92% !important; /* Mantle */
+    --heroui-foreground-200: 223 16% 83% !important; /* Surface 0 */
+    --heroui-foreground-300: 225 14% 77% !important; /* Surface 1 */
+    --heroui-foreground-400: 227 12% 71% !important; /* Surface 2 */
+    --heroui-foreground-500: 228 11% 65% !important; /* Overlay 0 */
+    --heroui-foreground-600: 231 10% 59% !important; /* Overlay 1 */
+    --heroui-foreground-700: 232 10% 53% !important; /* Overlay 2 */
+    --heroui-foreground-800: 233 10% 47% !important; /* Subtext 0 */
+    --heroui-foreground-900: 233 13% 41% !important; /* Subtext 1 */
+
+    /* Content scales */
+    --heroui-content1: 220 23% 95% !important; /* Base */
+    --heroui-content1-foreground: 234 16% 35% !important; /* Text */
+    --heroui-content2: 223 16% 83% !important; /* Surface 0 */
+    --heroui-content2-foreground: 233 13% 41% !important; /* Subtext 1 */
+    --heroui-content3: 225 14% 77% !important; /* Surface 1 */
+    --heroui-content3-foreground: 233 10% 47% !important; /* Subtext 0 */
+    --heroui-content4: 227 12% 71% !important; /* Surface 2 */
+    --heroui-content4-foreground: 232 10% 53% !important; /* Overlay 2 */
+
+    /* Utility colors */
+    --heroui-overlay: 220 23% 95% !important; /* Base with opacity */
+    --heroui-focus: 180 60% 45% !important; /* #2eb8b8 */
+    --heroui-divider: 234 16% 35% !important; /* Text */
+    --heroui-divider-opacity: 0.15 !important;
+
+    /* Brand colors */
+    /* Default - using Surface colors (unchanged) */
+    --heroui-default: 223 16% 83% !important; /* Surface 0 */
+    --heroui-default-50: 220 21% 89% !important;
+    --heroui-default-100: 220 22% 92% !important;
+    --heroui-default-200: 223 16% 83% !important;
+    --heroui-default-300: 225 14% 77% !important;
+    --heroui-default-400: 227 12% 71% !important;
+    --heroui-default-500: 228 11% 65% !important;
+    --heroui-default-600: 231 10% 59% !important;
+    --heroui-default-700: 232 10% 53% !important;
+    --heroui-default-800: 233 10% 47% !important;
+    --heroui-default-900: 233 13% 41% !important;
+    --heroui-default-foreground: 234 16% 35% !important;
+
+    /* Primary - #2eb8b8 (HSL: 180 60% 45%) */
+    --heroui-primary: 180 60% 45% !important;
+    --heroui-primary-50: 180 60% 95% !important;
+    --heroui-primary-100: 180 60% 85% !important;
+    --heroui-primary-200: 180 60% 75% !important;
+    --heroui-primary-300: 180 60% 65% !important;
+    --heroui-primary-400: 180 60% 55% !important;
+    --heroui-primary-500: 180 60% 45% !important;
+    --heroui-primary-600: 180 60% 38% !important;
+    --heroui-primary-700: 180 60% 31% !important;
+    --heroui-primary-800: 180 60% 24% !important;
+    --heroui-primary-900: 180 60% 17% !important;
+    --heroui-primary-foreground: 220 23% 95% !important; /* unchanged */
+
+    /* Secondary - Mauve (unchanged) */
+    --heroui-secondary: 266 85% 58% !important;
+    --heroui-secondary-50: 266 85% 97% !important;
+    --heroui-secondary-100: 266 85% 90% !important;
+    --heroui-secondary-200: 266 85% 82% !important;
+    --heroui-secondary-300: 266 85% 74% !important;
+    --heroui-secondary-400: 266 85% 66% !important;
+    --heroui-secondary-500: 266 85% 58% !important;
+    --heroui-secondary-600: 266 85% 50% !important;
+    --heroui-secondary-700: 266 85% 42% !important;
+    --heroui-secondary-800: 266 85% 34% !important;
+    --heroui-secondary-900: 266 85% 26% !important;
+    --heroui-secondary-foreground: 220 23% 95% !important;
+
+    /* Success - Green (unchanged) */
+    --heroui-success: 109 58% 40% !important;
+    --heroui-success-50: 109 58% 95% !important;
+    --heroui-success-100: 109 58% 85% !important;
+    --heroui-success-200: 109 58% 75% !important;
+    --heroui-success-300: 109 58% 65% !important;
+    --heroui-success-400: 109 58% 55% !important;
+    --heroui-success-500: 109 58% 40% !important;
+    --heroui-success-600: 109 58% 35% !important;
+    --heroui-success-700: 109 58% 30% !important;
+    --heroui-success-800: 109 58% 25% !important;
+    --heroui-success-900: 109 58% 20% !important;
+    --heroui-success-foreground: 220 23% 95% !important;
+
+    /* Warning - Peach (unchanged) */
+    --heroui-warning: 22 99% 52% !important;
+    --heroui-warning-50: 22 99% 95% !important;
+    --heroui-warning-100: 22 99% 85% !important;
+    --heroui-warning-200: 22 99% 75% !important;
+    --heroui-warning-300: 22 99% 65% !important;
+    --heroui-warning-400: 22 99% 55% !important;
+    --heroui-warning-500: 22 99% 52% !important;
+    --heroui-warning-600: 22 99% 45% !important;
+    --heroui-warning-700: 22 99% 38% !important;
+    --heroui-warning-800: 22 99% 31% !important;
+    --heroui-warning-900: 22 99% 24% !important;
+    --heroui-warning-foreground: 220 23% 95% !important;
+
+    /* Danger - Red (unchanged) */
+    --heroui-danger: 347 87% 44% !important;
+    --heroui-danger-50: 347 87% 95% !important;
+    --heroui-danger-100: 347 87% 85% !important;
+    --heroui-danger-200: 347 87% 75% !important;
+    --heroui-danger-300: 347 87% 65% !important;
+    --heroui-danger-400: 347 87% 55% !important;
+    --heroui-danger-500: 347 87% 44% !important;
+    --heroui-danger-600: 347 87% 38% !important;
+    --heroui-danger-700: 347 87% 32% !important;
+    --heroui-danger-800: 347 87% 26% !important;
+    --heroui-danger-900: 347 87% 20% !important;
+    --heroui-danger-foreground: 220 23% 95% !important;
+}
+
+/* 🌿Mocha */
+.dark, [data-theme="dark"] {
+    /* Base colors */
+    --heroui-background: 240 21% 15% !important; /* Base */
+    --heroui-foreground: 226 64% 88% !important; /* Text */
+
+    /* Foreground scale */
+    --heroui-foreground-50: 240 23% 9% !important; /* Crust */
+    --heroui-foreground-100: 240 21% 12% !important; /* Mantle */
+    --heroui-foreground-200: 237 16% 23% !important; /* Surface 0 */
+    --heroui-foreground-300: 234 13% 31% !important; /* Surface 1 */
+    --heroui-foreground-400: 233 12% 39% !important; /* Surface 2 */
+    --heroui-foreground-500: 231 11% 47% !important; /* Overlay 0 */
+    --heroui-foreground-600: 230 13% 55% !important; /* Overlay 1 */
+    --heroui-foreground-700: 228 17% 64% !important; /* Overlay 2 */
+    --heroui-foreground-800: 228 24% 72% !important; /* Subtext 0 */
+    --heroui-foreground-900: 227 35% 80% !important; /* Subtext 1 */
+
+    /* Content scales */
+    --heroui-content1: 240 21% 15% !important; /* Base */
+    --heroui-content1-foreground: 226 64% 88% !important; /* Text */
+    --heroui-content2: 237 16% 23% !important; /* Surface 0 */
+    --heroui-content2-foreground: 227 35% 80% !important; /* Subtext 1 */
+    --heroui-content3: 234 13% 31% !important; /* Surface 1 */
+    --heroui-content3-foreground: 228 24% 72% !important; /* Subtext 0 */
+    --heroui-content4: 233 12% 39% !important; /* Surface 2 */
+    --heroui-content4-foreground: 228 17% 64% !important; /* Overlay 2 */
+
+    /* Utility colors */
+    --heroui-overlay: 240 21% 15% !important; /* Base with opacity */
+    --heroui-focus: 180 60% 75% !important; /* #2eb8b8 bright variant */
+    --heroui-divider: 226 64% 88% !important; /* Text */
+    --heroui-divider-opacity: 0.15 !important;
+
+    /* Brand colors */
+    /* Default - using Surface colors (unchanged) */
+    --heroui-default: 237 16% 23% !important; /* Surface 0 */
+    --heroui-default-50: 240 23% 9% !important;
+    --heroui-default-100: 240 21% 12% !important;
+    --heroui-default-200: 237 16% 23% !important;
+    --heroui-default-300: 234 13% 31% !important;
+    --heroui-default-400: 233 12% 39% !important;
+    --heroui-default-500: 231 11% 47% !important;
+    --heroui-default-600: 230 13% 55% !important;
+    --heroui-default-700: 228 17% 64% !important;
+    --heroui-default-800: 228 24% 72% !important;
+    --heroui-default-900: 227 35% 80% !important;
+    --heroui-default-foreground: 226 64% 88% !important;
+
+    /* Primary - #2eb8b8 adapted for dark theme */
+    --heroui-primary: 180 60% 70% !important;
+    --heroui-primary-50: 180 60% 96% !important;
+    --heroui-primary-100: 180 60% 90% !important;
+    --heroui-primary-200: 180 60% 85% !important;
+    --heroui-primary-300: 180 60% 80% !important;
+    --heroui-primary-400: 180 60% 75% !important;
+    --heroui-primary-500: 180 60% 70% !important;
+    --heroui-primary-600: 180 60% 65% !important;
+    --heroui-primary-700: 180 60% 60% !important;
+    --heroui-primary-800: 180 60% 55% !important;
+    --heroui-primary-900: 180 60% 50% !important;
+    --heroui-primary-foreground: 240 21% 15% !important; /* unchanged */
+
+    /* Secondary - Mauve (unchanged) */
+    --heroui-secondary: 267 84% 81% !important;
+    --heroui-secondary-50: 267 84% 96% !important;
+    --heroui-secondary-100: 267 84% 90% !important;
+    --heroui-secondary-200: 267 84% 85% !important;
+    --heroui-secondary-300: 267 84% 81% !important;
+    --heroui-secondary-400: 267 84% 75% !important;
+    --heroui-secondary-500: 267 84% 70% !important;
+    --heroui-secondary-600: 267 84% 65% !important;
+    --heroui-secondary-700: 267 84% 60% !important;
+    --heroui-secondary-800: 267 84% 55% !important;
+    --heroui-secondary-900: 267 84% 50% !important;
+    --heroui-secondary-foreground: 240 21% 15% !important;
+
+    /* Success - Green (unchanged) */
+    --heroui-success: 115 54% 76% !important;
+    --heroui-success-50: 115 54% 96% !important;
+    --heroui-success-100: 115 54% 90% !important;
+    --heroui-success-200: 115 54% 85% !important;
+    --heroui-success-300: 115 54% 80% !important;
+    --heroui-success-400: 115 54% 76% !important;
+    --heroui-success-500: 115 54% 70% !important;
+    --heroui-success-600: 115 54% 65% !important;
+    --heroui-success-700: 115 54% 60% !important;
+    --heroui-success-800: 115 54% 55% !important;
+    --heroui-success-900: 115 54% 50% !important;
+    --heroui-success-foreground: 240 21% 15% !important;
+
+    /* Warning - Peach (unchanged) */
+    --heroui-warning: 23 92% 75% !important;
+    --heroui-warning-50: 23 92% 96% !important;
+    --heroui-warning-100: 23 92% 90% !important;
+    --heroui-warning-200: 23 92% 85% !important;
+    --heroui-warning-300: 23 92% 80% !important;
+    --heroui-warning-400: 23 92% 75% !important;
+    --heroui-warning-500: 23 92% 70% !important;
+    --heroui-warning-600: 23 92% 65% !important;
+    --heroui-warning-700: 23 92% 60% !important;
+    --heroui-warning-800: 23 92% 55% !important;
+    --heroui-warning-900: 23 92% 50% !important;
+    --heroui-warning-foreground: 240 21% 15% !important;
+
+    /* Danger - Red (unchanged) */
+    --heroui-danger: 343 81% 75% !important;
+    --heroui-danger-50: 343 81% 96% !important;
+    --heroui-danger-100: 343 81% 90% !important;
+    --heroui-danger-200: 343 81% 85% !important;
+    --heroui-danger-300: 343 81% 80% !important;
+    --heroui-danger-400: 343 81% 75% !important;
+    --heroui-danger-500: 343 81% 70% !important;
+    --heroui-danger-600: 343 81% 65% !important;
+    --heroui-danger-700: 343 81% 60% !important;
+    --heroui-danger-800: 343 81% 55% !important;
+    --heroui-danger-900: 343 81% 50% !important;
+    --heroui-danger-foreground: 240 21% 15% !important;
+}
+
+.floating-icon {
+    display: none !important;
+}
+.floating-bg {
+    overflow: hidden !important;
+}
+.floating-thumb {
+    background-size: contain !important;
+    background-color: transparent !important;
+}
