@@ -1,6 +1,7 @@
 # Clash Party's Catppuccin Theme (2.0)
 
 [English](#english) | [中文](#chinese)
+<img width="1012" height="764" alt="image" src="https://github.com/user-attachments/assets/5090d34d-6fa0-414b-8c10-613281f4e3db" />
 
 ---
 
