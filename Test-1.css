@@ -1,0 +1,252 @@
+/* Dew 清新浅色主题 - 优化黑色字体配色 */
+/* 主色调：薄荷蓝绿，低饱和、柔和、高级感 */
+
+/* 🌱Light */
+.light, [data-theme="light"] {
+    /* Base colors */
+    --heroui-background: 210 20% 97% !important; /* 极浅蓝灰 */
+    --heroui-foreground: 215 15% 38% !important; /* 柔和深灰蓝，不再发黑 */
+
+    /* Foreground scale */
+    --heroui-foreground-50: 210 18% 93% !important;
+    --heroui-foreground-100: 210 16% 89% !important;
+    --heroui-foreground-200: 210 15% 85% !important;
+    --heroui-foreground-300: 210 14% 80% !important;
+    --heroui-foreground-400: 210 13% 75% !important;
+    --heroui-foreground-500: 210 12% 70% !important;
+    --heroui-foreground-600: 210 12% 63% !important;
+    --heroui-foreground-700: 210 12% 56% !important;
+    --heroui-foreground-800: 215 13% 48% !important; /* 调亮 */
+    --heroui-foreground-900: 215 15% 42% !important; /* 调亮，原为过暗的35% */
+
+    /* Content scales */
+    --heroui-content1: 210 20% 97% !important;
+    --heroui-content1-foreground: 215 15% 38% !important; /* 跟随主文字 */
+    --heroui-content2: 210 15% 85% !important;
+    --heroui-content2-foreground: 215 15% 42% !important;
+    --heroui-content3: 210 14% 80% !important;
+    --heroui-content3-foreground: 215 13% 48% !important;
+    --heroui-content4: 210 13% 75% !important;
+    --heroui-content4-foreground: 210 12% 56% !important;
+
+    /* Utility colors */
+    --heroui-overlay: 210 20% 97% !important;
+    --heroui-focus: 170 25% 60% !important;
+    --heroui-divider: 215 15% 38% !important;
+    --heroui-divider-opacity: 0.12 !important;
+
+    /* Brand colors */
+    /* Default - 柔和中性灰 */
+    --heroui-default: 210 5% 85% !important;
+    --heroui-default-50: 210 5% 97% !important;
+    --heroui-default-100: 210 5% 93% !important;
+    --heroui-default-200: 210 5% 85% !important;
+    --heroui-default-300: 210 5% 78% !important;
+    --heroui-default-400: 210 5% 70% !important;
+    --heroui-default-500: 210 5% 62% !important;
+    --heroui-default-600: 210 5% 54% !important;
+    --heroui-default-700: 210 5% 46% !important;
+    --heroui-default-800: 210 5% 38% !important;
+    --heroui-default-900: 210 5% 30% !important;
+    --heroui-default-foreground: 215 15% 38% !important;
+
+    /* Primary - 薄荷蓝绿，关键修复：前景色改为干净浅色 */
+    --heroui-primary: 170 25% 60% !important;
+    --heroui-primary-50: 170 25% 95% !important;
+    --heroui-primary-100: 170 25% 87% !important;
+    --heroui-primary-200: 170 25% 79% !important;
+    --heroui-primary-300: 170 25% 71% !important;
+    --heroui-primary-400: 170 25% 63% !important;
+    --heroui-primary-500: 170 25% 60% !important;
+    --heroui-primary-600: 170 25% 52% !important;
+    --heroui-primary-700: 170 25% 44% !important;
+    --heroui-primary-800: 170 25% 36% !important;
+    --heroui-primary-900: 170 25% 28% !important;
+    --heroui-primary-foreground: 0 0% 100% !important; /* 纯白文字，解决进度条突兀问题 */
+
+    /* Secondary - 淡紫灰 */
+    --heroui-secondary: 280 15% 70% !important;
+    --heroui-secondary-50: 280 15% 95% !important;
+    --heroui-secondary-100: 280 15% 88% !important;
+    --heroui-secondary-200: 280 15% 81% !important;
+    --heroui-secondary-300: 280 15% 74% !important;
+    --heroui-secondary-400: 280 15% 72% !important;
+    --heroui-secondary-500: 280 15% 70% !important;
+    --heroui-secondary-600: 280 15% 62% !important;
+    --heroui-secondary-700: 280 15% 54% !important;
+    --heroui-secondary-800: 280 15% 46% !important;
+    --heroui-secondary-900: 280 15% 38% !important;
+    --heroui-secondary-foreground: 0 0% 100% !important; /* 同步修正 */
+
+    /* Success - 柔和翠绿 */
+    --heroui-success: 150 25% 55% !important;
+    --heroui-success-50: 150 25% 95% !important;
+    --heroui-success-100: 150 25% 87% !important;
+    --heroui-success-200: 150 25% 79% !important;
+    --heroui-success-300: 150 25% 71% !important;
+    --heroui-success-400: 150 25% 63% !important;
+    --heroui-success-500: 150 25% 55% !important;
+    --heroui-success-600: 150 25% 47% !important;
+    --heroui-success-700: 150 25% 39% !important;
+    --heroui-success-800: 150 25% 31% !important;
+    --heroui-success-900: 150 25% 23% !important;
+    --heroui-success-foreground: 0 0% 100% !important;
+
+    /* Warning - 柔和杏色 */
+    --heroui-warning: 30 35% 65% !important;
+    --heroui-warning-50: 30 35% 95% !important;
+    --heroui-warning-100: 30 35% 87% !important;
+    --heroui-warning-200: 30 35% 79% !important;
+    --heroui-warning-300: 30 35% 71% !important;
+    --heroui-warning-400: 30 35% 63% !important;
+    --heroui-warning-500: 30 35% 65% !important;
+    --heroui-warning-600: 30 35% 57% !important;
+    --heroui-warning-700: 30 35% 49% !important;
+    --heroui-warning-800: 30 35% 41% !important;
+    --heroui-warning-900: 30 35% 33% !important;
+    --heroui-warning-foreground: 215 15% 38% !important; /* 杏色背景上深灰字更清晰 */
+
+    /* Danger - 柔和珊瑚红 */
+    --heroui-danger: 5 30% 60% !important;
+    --heroui-danger-50: 5 30% 95% !important;
+    --heroui-danger-100: 5 30% 87% !important;
+    --heroui-danger-200: 5 30% 79% !important;
+    --heroui-danger-300: 5 30% 71% !important;
+    --heroui-danger-400: 5 30% 63% !important;
+    --heroui-danger-500: 5 30% 60% !important;
+    --heroui-danger-600: 5 30% 52% !important;
+    --heroui-danger-700: 5 30% 44% !important;
+    --heroui-danger-800: 5 30% 36% !important;
+    --heroui-danger-900: 5 30% 28% !important;
+    --heroui-danger-foreground: 0 0% 100% !important;
+}
+
+/* 🌙Dark */
+.dark, [data-theme="dark"] {
+    /* Base colors */
+    --heroui-background: 215 25% 10% !important;
+    --heroui-foreground: 210 20% 85% !important;
+
+    /* Foreground scale */
+    --heroui-foreground-50: 215 25% 7% !important;
+    --heroui-foreground-100: 215 25% 10% !important;
+    --heroui-foreground-200: 215 20% 15% !important;
+    --heroui-foreground-300: 215 18% 22% !important;
+    --heroui-foreground-400: 215 16% 30% !important;
+    --heroui-foreground-500: 215 14% 38% !important;
+    --heroui-foreground-600: 215 13% 48% !important;
+    --heroui-foreground-700: 215 12% 58% !important;
+    --heroui-foreground-800: 210 15% 70% !important;
+    --heroui-foreground-900: 210 20% 82% !important;
+
+    /* Content scales */
+    --heroui-content1: 215 25% 10% !important;
+    --heroui-content1-foreground: 210 20% 85% !important;
+    --heroui-content2: 215 20% 15% !important;
+    --heroui-content2-foreground: 210 20% 82% !important;
+    --heroui-content3: 215 18% 22% !important;
+    --heroui-content3-foreground: 210 15% 70% !important;
+    --heroui-content4: 215 16% 30% !important;
+    --heroui-content4-foreground: 215 12% 58% !important;
+
+    /* Utility colors */
+    --heroui-overlay: 215 25% 10% !important;
+    --heroui-focus: 170 30% 70% !important;
+    --heroui-divider: 210 20% 85% !important;
+    --heroui-divider-opacity: 0.12 !important;
+
+    /* Brand colors */
+    --heroui-default: 215 5% 22% !important;
+    --heroui-default-50: 215 5% 10% !important;
+    --heroui-default-100: 215 5% 14% !important;
+    --heroui-default-200: 215 5% 22% !important;
+    --heroui-default-300: 215 5% 30% !important;
+    --heroui-default-400: 215 5% 38% !important;
+    --heroui-default-500: 215 5% 46% !important;
+    --heroui-default-600: 215 5% 54% !important;
+    --heroui-default-700: 215 5% 62% !important;
+    --heroui-default-800: 215 5% 70% !important;
+    --heroui-default-900: 215 5% 78% !important;
+    --heroui-default-foreground: 210 20% 85% !important;
+
+    /* Primary */
+    --heroui-primary: 170 30% 70% !important;
+    --heroui-primary-50: 170 30% 96% !important;
+    --heroui-primary-100: 170 30% 88% !important;
+    --heroui-primary-200: 170 30% 82% !important;
+    --heroui-primary-300: 170 30% 76% !important;
+    --heroui-primary-400: 170 30% 73% !important;
+    --heroui-primary-500: 170 30% 70% !important;
+    --heroui-primary-600: 170 30% 62% !important;
+    --heroui-primary-700: 170 30% 54% !important;
+    --heroui-primary-800: 170 30% 46% !important;
+    --heroui-primary-900: 170 30% 38% !important;
+    --heroui-primary-foreground: 215 25% 10% !important;
+
+    /* Secondary */
+    --heroui-secondary: 280 20% 75% !important;
+    --heroui-secondary-50: 280 20% 96% !important;
+    --heroui-secondary-100: 280 20% 88% !important;
+    --heroui-secondary-200: 280 20% 83% !important;
+    --heroui-secondary-300: 280 20% 78% !important;
+    --heroui-secondary-400: 280 20% 75% !important;
+    --heroui-secondary-500: 280 20% 70% !important;
+    --heroui-secondary-600: 280 20% 62% !important;
+    --heroui-secondary-700: 280 20% 54% !important;
+    --heroui-secondary-800: 280 20% 46% !important;
+    --heroui-secondary-900: 280 20% 38% !important;
+    --heroui-secondary-foreground: 215 25% 10% !important;
+
+    /* Success */
+    --heroui-success: 150 30% 70% !important;
+    --heroui-success-50: 150 30% 96% !important;
+    --heroui-success-100: 150 30% 88% !important;
+    --heroui-success-200: 150 30% 82% !important;
+    --heroui-success-300: 150 30% 76% !important;
+    --heroui-success-400: 150 30% 73% !important;
+    --heroui-success-500: 150 30% 70% !important;
+    --heroui-success-600: 150 30% 62% !important;
+    --heroui-success-700: 150 30% 54% !important;
+    --heroui-success-800: 150 30% 46% !important;
+    --heroui-success-900: 150 30% 38% !important;
+    --heroui-success-foreground: 215 25% 10% !important;
+
+    /* Warning */
+    --heroui-warning: 30 40% 75% !important;
+    --heroui-warning-50: 30 40% 96% !important;
+    --heroui-warning-100: 30 40% 88% !important;
+    --heroui-warning-200: 30 40% 83% !important;
+    --heroui-warning-300: 30 40% 78% !important;
+    --heroui-warning-400: 30 40% 75% !important;
+    --heroui-warning-500: 30 40% 70% !important;
+    --heroui-warning-600: 30 40% 62% !important;
+    --heroui-warning-700: 30 40% 54% !important;
+    --heroui-warning-800: 30 40% 46% !important;
+    --heroui-warning-900: 30 40% 38% !important;
+    --heroui-warning-foreground: 215 25% 10% !important;
+
+    /* Danger */
+    --heroui-danger: 5 35% 70% !important;
+    --heroui-danger-50: 5 35% 96% !important;
+    --heroui-danger-100: 5 35% 88% !important;
+    --heroui-danger-200: 5 35% 82% !important;
+    --heroui-danger-300: 5 35% 76% !important;
+    --heroui-danger-400: 5 35% 73% !important;
+    --heroui-danger-500: 5 35% 70% !important;
+    --heroui-danger-600: 5 35% 62% !important;
+    --heroui-danger-700: 5 35% 54% !important;
+    --heroui-danger-800: 5 35% 46% !important;
+    --heroui-danger-900: 5 35% 38% !important;
+    --heroui-danger-foreground: 215 25% 10% !important;
+}
+
+.floating-icon {
+    display: none !important;
+}
+.floating-bg {
+    overflow: hidden !important;
+}
+.floating-thumb {
+    background-size: contain !important;
+    background-color: transparent !important;
+}
