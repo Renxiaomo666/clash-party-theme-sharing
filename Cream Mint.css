@@ -1,0 +1,603 @@
+/* 奶油薄荷
+*/
+
+/* =========================================================
+   Dark Theme
+   ========================================================= */
+
+.dark,
+[data-theme="dark"] {
+    color-scheme: dark !important;
+
+    --cream-mint-ink: 90 28% 93% !important;
+    --cream-mint-ink-soft: 95 18% 78% !important;
+    --cream-mint-active-foreground: 92 35% 94% !important;
+    --cream-mint-surface: 140 14% 12% !important;
+    --cream-mint-surface-2: 140 13% 16% !important;
+    --cream-mint-progress-track: 140 12% 22% !important;
+    --cream-mint-progress-indicator: 162 46% 64% !important;
+    --cream-mint-progress-fill: linear-gradient(90deg, hsl(162 42% 50%), hsl(162 48% 68%)) !important;
+
+    --heroui-background: 140 14% 8% !important;
+
+    --heroui-foreground-50: 140 14% 11% !important;
+    --heroui-foreground-100: 140 13% 15% !important;
+    --heroui-foreground-200: 140 12% 24% !important;
+    --heroui-foreground-300: 140 10% 33% !important;
+    --heroui-foreground-400: 132 8% 46% !important;
+    --heroui-foreground-500: 130 9% 62% !important;
+    --heroui-foreground-600: 125 16% 77% !important;
+    --heroui-foreground-700: 120 24% 86% !important;
+    --heroui-foreground-800: 105 35% 93% !important;
+    --heroui-foreground-900: 51 47% 97% !important;
+    --heroui-foreground: 90 28% 93% !important;
+
+    --heroui-focus: 162 46% 64% !important;
+    --heroui-overlay: 135 20% 4% !important;
+
+    --heroui-divider: 105 35% 93% !important;
+    --heroui-divider-opacity: 0.13 !important;
+
+    --heroui-content1: 140 14% 12% !important;
+    --heroui-content1-foreground: 90 28% 93% !important;
+    --heroui-content2: 140 13% 16% !important;
+    --heroui-content2-foreground: 105 35% 93% !important;
+    --heroui-content3: 140 12% 22% !important;
+    --heroui-content3-foreground: 120 24% 86% !important;
+    --heroui-content4: 140 10% 28% !important;
+    --heroui-content4-foreground: 125 16% 77% !important;
+
+    --heroui-default-50: 140 14% 11% !important;
+    --heroui-default-100: 140 13% 15% !important;
+    --heroui-default-200: 140 12% 24% !important;
+    --heroui-default-300: 140 10% 33% !important;
+    --heroui-default-400: 132 8% 46% !important;
+    --heroui-default-500: 130 9% 62% !important;
+    --heroui-default-600: 125 16% 77% !important;
+    --heroui-default-700: 120 24% 86% !important;
+    --heroui-default-800: 105 35% 93% !important;
+    --heroui-default-900: 51 47% 97% !important;
+    --heroui-default-foreground: 90 28% 93% !important;
+    --heroui-default: 140 12% 24% !important;
+
+    /* Primary · Mint */
+    --heroui-primary-50: 162 50% 13% !important;
+    --heroui-primary-100: 162 48% 20% !important;
+    --heroui-primary-200: 162 46% 28% !important;
+    --heroui-primary-300: 162 44% 37% !important;
+    --heroui-primary-400: 162 42% 47% !important;
+    --heroui-primary-500: 162 46% 64% !important;
+    --heroui-primary-600: 162 50% 72% !important;
+    --heroui-primary-700: 162 55% 80% !important;
+    --heroui-primary-800: 162 60% 88% !important;
+    --heroui-primary-900: 162 65% 95% !important;
+    --heroui-primary-foreground: 154 35% 14% !important;
+    --heroui-primary: 162 46% 64% !important;
+
+    /* Secondary · Sage Cream */
+    --heroui-secondary-50: 142 26% 13% !important;
+    --heroui-secondary-100: 142 24% 20% !important;
+    --heroui-secondary-200: 142 22% 29% !important;
+    --heroui-secondary-300: 142 21% 39% !important;
+    --heroui-secondary-400: 142 22% 52% !important;
+    --heroui-secondary-500: 142 24% 66% !important;
+    --heroui-secondary-600: 142 27% 76% !important;
+    --heroui-secondary-700: 142 31% 84% !important;
+    --heroui-secondary-800: 142 36% 91% !important;
+    --heroui-secondary-900: 142 40% 96% !important;
+    --heroui-secondary-foreground: 154 35% 14% !important;
+    --heroui-secondary: 142 24% 66% !important;
+
+    /* Success · Soft Green */
+    --heroui-success-50: 139 36% 12% !important;
+    --heroui-success-100: 139 35% 19% !important;
+    --heroui-success-200: 139 35% 28% !important;
+    --heroui-success-300: 139 35% 38% !important;
+    --heroui-success-400: 139 36% 48% !important;
+    --heroui-success-500: 139 36% 57% !important;
+    --heroui-success-600: 139 42% 68% !important;
+    --heroui-success-700: 139 48% 78% !important;
+    --heroui-success-800: 139 54% 88% !important;
+    --heroui-success-900: 139 60% 94% !important;
+    --heroui-success-foreground: 154 35% 14% !important;
+    --heroui-success: 139 36% 57% !important;
+
+    /* Warning · Soft Honey */
+    --heroui-warning-50: 43 45% 13% !important;
+    --heroui-warning-100: 43 48% 21% !important;
+    --heroui-warning-200: 43 52% 31% !important;
+    --heroui-warning-300: 43 56% 43% !important;
+    --heroui-warning-400: 43 59% 54% !important;
+    --heroui-warning-500: 43 59% 63% !important;
+    --heroui-warning-600: 43 64% 72% !important;
+    --heroui-warning-700: 43 70% 81% !important;
+    --heroui-warning-800: 43 76% 90% !important;
+    --heroui-warning-900: 43 82% 95% !important;
+    --heroui-warning-foreground: 35 35% 10% !important;
+    --heroui-warning: 43 59% 63% !important;
+
+    /* Danger · Muted Coral */
+    --heroui-danger-50: 5 40% 14% !important;
+    --heroui-danger-100: 5 43% 22% !important;
+    --heroui-danger-200: 5 47% 33% !important;
+    --heroui-danger-300: 5 51% 45% !important;
+    --heroui-danger-400: 5 56% 57% !important;
+    --heroui-danger-500: 5 56% 65% !important;
+    --heroui-danger-600: 5 62% 74% !important;
+    --heroui-danger-700: 5 68% 82% !important;
+    --heroui-danger-800: 5 76% 91% !important;
+    --heroui-danger-900: 5 82% 96% !important;
+    --heroui-danger-foreground: 20 30% 10% !important;
+    --heroui-danger: 5 56% 65% !important;
+
+    /* Progress */
+    --heroui-progress-track: 140 12% 22% !important;
+    --heroui-progress-indicator: 162 46% 64% !important;
+    --heroui-progress-foreground: 154 35% 14% !important;
+
+    --heroui-divider-weight: 1px !important;
+    --heroui-disabled-opacity: .5 !important;
+
+    --heroui-font-size-tiny: 0.75rem !important;
+    --heroui-font-size-small: 0.875rem !important;
+    --heroui-font-size-medium: 1rem !important;
+    --heroui-font-size-large: 1.125rem !important;
+
+    --heroui-line-height-tiny: 1rem !important;
+    --heroui-line-height-small: 1.25rem !important;
+    --heroui-line-height-medium: 1.5rem !important;
+    --heroui-line-height-large: 1.75rem !important;
+
+    --heroui-radius-small: 8px !important;
+    --heroui-radius-medium: 12px !important;
+    --heroui-radius-large: 14px !important;
+
+    --heroui-border-width-small: 1px !important;
+    --heroui-border-width-medium: 2px !important;
+    --heroui-border-width-large: 3px !important;
+
+    --heroui-box-shadow-small: 0px 0px 5px 0px rgb(0 0 0 / 0.10), 0px 2px 10px 0px rgb(0 0 0 / 0.26), inset 0px 0px 1px 0px rgb(255 255 255 / 0.12) !important;
+    --heroui-box-shadow-medium: 0px 0px 15px 0px rgb(0 0 0 / 0.12), 0px 2px 30px 0px rgb(0 0 0 / 0.30), inset 0px 0px 1px 0px rgb(255 255 255 / 0.12) !important;
+    --heroui-box-shadow-large: 0px 0px 30px 0px rgb(0 0 0 / 0.14), 0px 30px 60px 0px rgb(0 0 0 / 0.34), inset 0px 0px 1px 0px rgb(255 255 255 / 0.12) !important;
+
+    --heroui-hover-opacity: .88 !important;
+}
+
+/* =========================================================
+   Light Theme · Cream Mint
+   ========================================================= */
+
+.light,
+[data-theme="light"] {
+    color-scheme: light !important;
+
+    --cream-mint-ink: 154 30% 19% !important;
+    --cream-mint-ink-soft: 145 15% 38% !important;
+    --cream-mint-active-foreground: 154 34% 21% !important;
+    --cream-mint-surface: 45 52% 94% !important;
+    --cream-mint-surface-2: 43 42% 90% !important;
+    --cream-mint-progress-track: 43 38% 87% !important;
+    --cream-mint-progress-indicator: 162 42% 57% !important;
+    --cream-mint-progress-fill: linear-gradient(90deg, hsl(162 42% 62%), hsl(159 42% 46%)) !important;
+
+    /* 页面底色：奶油色，不是纯白 */
+    --heroui-background: 46 60% 96% !important;
+
+    /* 文字色阶：用深奶油绿墨色代替纯黑 */
+    --heroui-foreground-50: 46 60% 96% !important;
+    --heroui-foreground-100: 45 52% 94% !important;
+    --heroui-foreground-200: 43 42% 90% !important;
+    --heroui-foreground-300: 43 34% 86% !important;
+    --heroui-foreground-400: 42 20% 70% !important;
+    --heroui-foreground-500: 145 12% 50% !important;
+    --heroui-foreground-600: 150 16% 38% !important;
+    --heroui-foreground-700: 154 22% 28% !important;
+    --heroui-foreground-800: 154 28% 21% !important;
+    --heroui-foreground-900: 154 34% 15% !important;
+    --heroui-foreground: 154 30% 19% !important;
+
+    --heroui-divider: 154 28% 21% !important;
+    --heroui-divider-opacity: 0.10 !important;
+
+    --heroui-focus: 162 42% 48% !important;
+    --heroui-overlay: 154 34% 15% !important;
+
+    /* 卡片/小组件：全部偏奶油灰黄，避免纯白突兀 */
+    --heroui-content1: 45 52% 94% !important;
+    --heroui-content1-foreground: 154 30% 19% !important;
+    --heroui-content2: 43 42% 90% !important;
+    --heroui-content2-foreground: 154 28% 21% !important;
+    --heroui-content3: 43 34% 86% !important;
+    --heroui-content3-foreground: 154 22% 28% !important;
+    --heroui-content4: 142 24% 83% !important;
+    --heroui-content4-foreground: 150 16% 38% !important;
+
+    --heroui-default-50: 46 60% 96% !important;
+    --heroui-default-100: 45 52% 94% !important;
+    --heroui-default-200: 43 42% 90% !important;
+    --heroui-default-300: 43 34% 86% !important;
+    --heroui-default-400: 42 20% 70% !important;
+    --heroui-default-500: 145 12% 50% !important;
+    --heroui-default-600: 150 16% 38% !important;
+    --heroui-default-700: 154 22% 28% !important;
+    --heroui-default-800: 154 28% 21% !important;
+    --heroui-default-900: 154 34% 15% !important;
+    --heroui-default-foreground: 154 30% 19% !important;
+    --heroui-default: 43 34% 86% !important;
+
+    /* Primary · Mint */
+    --heroui-primary-50: 162 58% 96% !important;
+    --heroui-primary-100: 162 52% 91% !important;
+    --heroui-primary-200: 162 46% 82% !important;
+    --heroui-primary-300: 162 43% 70% !important;
+    --heroui-primary-400: 162 42% 62% !important;
+    --heroui-primary-500: 162 42% 57% !important;
+    --heroui-primary-600: 162 39% 45% !important;
+    --heroui-primary-700: 162 42% 34% !important;
+    --heroui-primary-800: 162 46% 23% !important;
+    --heroui-primary-900: 162 50% 15% !important;
+    --heroui-primary-foreground: 154 34% 21% !important;
+    --heroui-primary: 162 42% 57% !important;
+
+    /* Secondary · Sage Cream */
+    --heroui-secondary-50: 142 40% 97% !important;
+    --heroui-secondary-100: 142 34% 92% !important;
+    --heroui-secondary-200: 142 29% 86% !important;
+    --heroui-secondary-300: 142 24% 80% !important;
+    --heroui-secondary-400: 142 22% 70% !important;
+    --heroui-secondary-500: 142 20% 60% !important;
+    --heroui-secondary-600: 142 18% 48% !important;
+    --heroui-secondary-700: 142 20% 36% !important;
+    --heroui-secondary-800: 142 22% 24% !important;
+    --heroui-secondary-900: 142 24% 15% !important;
+    --heroui-secondary-foreground: 154 34% 21% !important;
+    --heroui-secondary: 142 24% 80% !important;
+
+    /* Success · Soft Green */
+    --heroui-success-50: 139 60% 96% !important;
+    --heroui-success-100: 139 54% 90% !important;
+    --heroui-success-200: 139 48% 82% !important;
+    --heroui-success-300: 139 42% 72% !important;
+    --heroui-success-400: 139 38% 64% !important;
+    --heroui-success-500: 139 36% 57% !important;
+    --heroui-success-600: 139 38% 45% !important;
+    --heroui-success-700: 139 42% 34% !important;
+    --heroui-success-800: 139 46% 23% !important;
+    --heroui-success-900: 139 50% 14% !important;
+    --heroui-success-foreground: 154 34% 21% !important;
+    --heroui-success: 139 36% 57% !important;
+
+    /* Warning · Soft Honey */
+    --heroui-warning-50: 43 82% 96% !important;
+    --heroui-warning-100: 43 76% 91% !important;
+    --heroui-warning-200: 43 70% 83% !important;
+    --heroui-warning-300: 43 64% 73% !important;
+    --heroui-warning-400: 43 60% 67% !important;
+    --heroui-warning-500: 43 59% 63% !important;
+    --heroui-warning-600: 43 58% 50% !important;
+    --heroui-warning-700: 43 58% 38% !important;
+    --heroui-warning-800: 43 56% 25% !important;
+    --heroui-warning-900: 43 54% 15% !important;
+    --heroui-warning-foreground: 35 35% 10% !important;
+    --heroui-warning: 43 59% 63% !important;
+
+    /* Danger · Muted Coral */
+    --heroui-danger-50: 5 82% 97% !important;
+    --heroui-danger-100: 5 76% 92% !important;
+    --heroui-danger-200: 5 68% 84% !important;
+    --heroui-danger-300: 5 62% 76% !important;
+    --heroui-danger-400: 5 58% 69% !important;
+    --heroui-danger-500: 5 56% 65% !important;
+    --heroui-danger-600: 5 52% 52% !important;
+    --heroui-danger-700: 5 50% 40% !important;
+    --heroui-danger-800: 5 48% 27% !important;
+    --heroui-danger-900: 5 46% 16% !important;
+    --heroui-danger-foreground: 20 30% 10% !important;
+    --heroui-danger: 5 56% 65% !important;
+
+    /* Progress */
+    --heroui-progress-track: 43 38% 87% !important;
+    --heroui-progress-indicator: 162 42% 57% !important;
+    --heroui-progress-foreground: 154 34% 21% !important;
+
+    --heroui-divider-weight: 1px !important;
+    --heroui-disabled-opacity: .5 !important;
+
+    --heroui-font-size-tiny: 0.75rem !important;
+    --heroui-font-size-small: 0.875rem !important;
+    --heroui-font-size-medium: 1rem !important;
+    --heroui-font-size-large: 1.125rem !important;
+
+    --heroui-line-height-tiny: 1rem !important;
+    --heroui-line-height-small: 1.25rem !important;
+    --heroui-line-height-medium: 1.5rem !important;
+    --heroui-line-height-large: 1.75rem !important;
+
+    --heroui-radius-small: 8px !important;
+    --heroui-radius-medium: 12px !important;
+    --heroui-radius-large: 14px !important;
+
+    --heroui-border-width-small: 1px !important;
+    --heroui-border-width-medium: 2px !important;
+    --heroui-border-width-large: 3px !important;
+
+    --heroui-box-shadow-small: 0px 0px 5px 0px rgb(33 72 61 / 0.03), 0px 2px 10px 0px rgb(33 72 61 / 0.07), 0px 0px 1px 0px rgb(33 72 61 / 0.20) !important;
+    --heroui-box-shadow-medium: 0px 0px 15px 0px rgb(33 72 61 / 0.04), 0px 2px 30px 0px rgb(33 72 61 / 0.09), 0px 0px 1px 0px rgb(33 72 61 / 0.20) !important;
+    --heroui-box-shadow-large: 0px 0px 30px 0px rgb(33 72 61 / 0.05), 0px 30px 60px 0px rgb(33 72 61 / 0.12), 0px 0px 1px 0px rgb(33 72 61 / 0.20) !important;
+
+    --heroui-hover-opacity: .86 !important;
+}
+
+/* =========================================================
+   Base surface and text fallback
+   目的：处理项目里可能写死的 bg-white / text-black。
+   ========================================================= */
+
+.light,
+[data-theme="light"] {
+    background-color: hsl(var(--heroui-background)) !important;
+    color: hsl(var(--heroui-foreground)) !important;
+}
+
+.light body,
+[data-theme="light"] body {
+    background-color: hsl(var(--heroui-background)) !important;
+    color: hsl(var(--heroui-foreground)) !important;
+}
+
+/* 把写死的纯白卡片统一拉回奶油灰黄，避免和页面奶油底色突兀割裂 */
+.light .bg-white,
+[data-theme="light"] .bg-white,
+.light [class*="bg-white"],
+[data-theme="light"] [class*="bg-white"],
+.light [style*="background-color: white"],
+[data-theme="light"] [style*="background-color: white"],
+.light [style*="background: white"],
+[data-theme="light"] [style*="background: white"],
+.light [style*="background-color: #fff"],
+[data-theme="light"] [style*="background-color: #fff"],
+.light [style*="background-color:#fff"],
+[data-theme="light"] [style*="background-color:#fff"],
+.light [style*="background-color: rgb(255, 255, 255)"],
+[data-theme="light"] [style*="background-color: rgb(255, 255, 255)"] {
+    background-color: hsl(var(--cream-mint-surface)) !important;
+}
+
+/* 把写死的黑色文字/图标改为深奶油绿墨色 */
+.light .text-black,
+[data-theme="light"] .text-black,
+.light [class*="text-black"],
+[data-theme="light"] [class*="text-black"],
+.light [style*="color: black"],
+[data-theme="light"] [style*="color: black"],
+.light [style*="color:#000"],
+[data-theme="light"] [style*="color:#000"],
+.light [style*="color: #000"],
+[data-theme="light"] [style*="color: #000"],
+.light [style*="color: rgb(0, 0, 0)"],
+[data-theme="light"] [style*="color: rgb(0, 0, 0)"] {
+    color: hsl(var(--cream-mint-ink)) !important;
+}
+
+/* SVG 如果使用 currentColor，会自动跟随深奶油绿 */
+.light svg,
+[data-theme="light"] svg {
+    color: hsl(var(--cream-mint-ink)) !important;
+}
+
+/* =========================================================
+   Active / Selected fallback
+   目的：处理选中模块、选中卡片、Tab、Button 被选中后仍然 text-black 的问题。
+   ========================================================= */
+
+.light :is([aria-selected="true"], [data-selected="true"], [data-active="true"], [data-state="active"], [data-pressed="true"], .active, .selected, .is-active, .is-selected),
+[data-theme="light"] :is([aria-selected="true"], [data-selected="true"], [data-active="true"], [data-state="active"], [data-pressed="true"], .active, .selected, .is-active, .is-selected) {
+    color: hsl(var(--cream-mint-active-foreground)) !important;
+}
+
+.light :is([aria-selected="true"], [data-selected="true"], [data-active="true"], [data-state="active"], [data-pressed="true"], .active, .selected, .is-active, .is-selected) :is(span, p, div, label, strong, small, b, i),
+[data-theme="light"] :is([aria-selected="true"], [data-selected="true"], [data-active="true"], [data-state="active"], [data-pressed="true"], .active, .selected, .is-active, .is-selected) :is(span, p, div, label, strong, small, b, i) {
+    color: hsl(var(--cream-mint-active-foreground)) !important;
+}
+
+.light :is([aria-selected="true"], [data-selected="true"], [data-active="true"], [data-state="active"], [data-pressed="true"], .active, .selected, .is-active, .is-selected) svg,
+[data-theme="light"] :is([aria-selected="true"], [data-selected="true"], [data-active="true"], [data-state="active"], [data-pressed="true"], .active, .selected, .is-active, .is-selected) svg {
+    color: hsl(var(--cream-mint-active-foreground)) !important;
+    stroke: currentColor !important;
+}
+
+.light :is([aria-selected="true"], [data-selected="true"], [data-active="true"], [data-state="active"], [data-pressed="true"], .active, .selected, .is-active, .is-selected) svg *,
+[data-theme="light"] :is([aria-selected="true"], [data-selected="true"], [data-active="true"], [data-state="active"], [data-pressed="true"], .active, .selected, .is-active, .is-selected) svg * {
+    stroke: currentColor !important;
+}
+
+/* 选中态背景如果使用 primary，文字保持深绿墨色，而不是纯黑 */
+.light .bg-primary,
+[data-theme="light"] .bg-primary,
+.light [class*="bg-primary"],
+[data-theme="light"] [class*="bg-primary"] {
+    color: hsl(var(--cream-mint-active-foreground)) !important;
+}
+
+/* =========================================================
+   Progress fallback
+   目的：彻底处理截图里仍然显示为黑色的进度条。
+   说明：
+   - HeroUI/NextUI Progress：覆盖 data-slot / role="progressbar"
+   - 原生 progress：覆盖 accent-color 与浏览器伪元素
+   - 自定义进度条：覆盖 bg-black / bg-foreground / bg-default-900 / zinc/neutral/slate/stone 这类黑色填充
+   ========================================================= */
+
+/* Native progress */
+.light progress,
+[data-theme="light"] progress,
+.dark progress,
+[data-theme="dark"] progress {
+    accent-color: hsl(var(--heroui-progress-indicator)) !important;
+}
+
+.light progress::-webkit-progress-bar,
+[data-theme="light"] progress::-webkit-progress-bar,
+.dark progress::-webkit-progress-bar,
+[data-theme="dark"] progress::-webkit-progress-bar {
+    background-color: hsl(var(--heroui-progress-track)) !important;
+    border-radius: 9999px !important;
+}
+
+.light progress::-webkit-progress-value,
+[data-theme="light"] progress::-webkit-progress-value,
+.dark progress::-webkit-progress-value,
+[data-theme="dark"] progress::-webkit-progress-value {
+    background: var(--cream-mint-progress-fill) !important;
+    border-radius: 9999px !important;
+}
+
+.light progress::-moz-progress-bar,
+[data-theme="light"] progress::-moz-progress-bar,
+.dark progress::-moz-progress-bar,
+[data-theme="dark"] progress::-moz-progress-bar {
+    background: var(--cream-mint-progress-fill) !important;
+    border-radius: 9999px !important;
+}
+
+/* HeroUI / NextUI / Radix-like progress track */
+.light [role="progressbar"],
+[data-theme="light"] [role="progressbar"],
+.dark [role="progressbar"],
+[data-theme="dark"] [role="progressbar"],
+.light [data-slot="progress"],
+[data-theme="light"] [data-slot="progress"],
+.dark [data-slot="progress"],
+[data-theme="dark"] [data-slot="progress"] {
+    background-color: hsl(var(--heroui-progress-track)) !important;
+    border-radius: 9999px !important;
+    overflow: hidden !important;
+}
+
+.light [role="progressbar"] [data-slot="track"],
+[data-theme="light"] [role="progressbar"] [data-slot="track"],
+.dark [role="progressbar"] [data-slot="track"],
+[data-theme="dark"] [role="progressbar"] [data-slot="track"],
+.light [data-slot="progress"] [data-slot="track"],
+[data-theme="light"] [data-slot="progress"] [data-slot="track"],
+.dark [data-slot="progress"] [data-slot="track"],
+[data-theme="dark"] [data-slot="progress"] [data-slot="track"],
+.light .heroui-progress-track,
+[data-theme="light"] .heroui-progress-track,
+.dark .heroui-progress-track,
+[data-theme="dark"] .heroui-progress-track,
+.light .nextui-progress-track,
+[data-theme="light"] .nextui-progress-track,
+.dark .nextui-progress-track,
+[data-theme="dark"] .nextui-progress-track,
+.light .progress-track,
+[data-theme="light"] .progress-track,
+.dark .progress-track,
+[data-theme="dark"] .progress-track {
+    background-color: hsl(var(--heroui-progress-track)) !important;
+    border-radius: 9999px !important;
+}
+
+.light [role="progressbar"] [data-slot="indicator"],
+[data-theme="light"] [role="progressbar"] [data-slot="indicator"],
+.dark [role="progressbar"] [data-slot="indicator"],
+[data-theme="dark"] [role="progressbar"] [data-slot="indicator"],
+.light [data-slot="progress"] [data-slot="indicator"],
+[data-theme="light"] [data-slot="progress"] [data-slot="indicator"],
+.dark [data-slot="progress"] [data-slot="indicator"],
+[data-theme="dark"] [data-slot="progress"] [data-slot="indicator"],
+.light .heroui-progress-indicator,
+[data-theme="light"] .heroui-progress-indicator,
+.dark .heroui-progress-indicator,
+[data-theme="dark"] .heroui-progress-indicator,
+.light .nextui-progress-indicator,
+[data-theme="light"] .nextui-progress-indicator,
+.dark .nextui-progress-indicator,
+[data-theme="dark"] .nextui-progress-indicator,
+.light .progress-indicator,
+[data-theme="light"] .progress-indicator,
+.dark .progress-indicator,
+[data-theme="dark"] .progress-indicator,
+.light .progress-bar,
+[data-theme="light"] .progress-bar,
+.dark .progress-bar,
+[data-theme="dark"] .progress-bar {
+    background: var(--cream-mint-progress-fill) !important;
+    border-radius: 9999px !important;
+}
+
+/* 自定义进度条兜底：有 width/transform 的黑色填充条，大概率就是进度条填充层 */
+.light [class*="bg-black"][style*="width"],
+[data-theme="light"] [class*="bg-black"][style*="width"],
+.light [class*="bg-foreground"][style*="width"],
+[data-theme="light"] [class*="bg-foreground"][style*="width"],
+.light [class*="bg-default-900"][style*="width"],
+[data-theme="light"] [class*="bg-default-900"][style*="width"],
+.light [class*="bg-zinc-950"][style*="width"],
+[data-theme="light"] [class*="bg-zinc-950"][style*="width"],
+.light [class*="bg-neutral-950"][style*="width"],
+[data-theme="light"] [class*="bg-neutral-950"][style*="width"],
+.light [class*="bg-slate-950"][style*="width"],
+[data-theme="light"] [class*="bg-slate-950"][style*="width"],
+.light [class*="bg-stone-950"][style*="width"],
+[data-theme="light"] [class*="bg-stone-950"][style*="width"],
+.light [class*="bg-black"][style*="transform"],
+[data-theme="light"] [class*="bg-black"][style*="transform"],
+.light [class*="bg-foreground"][style*="transform"],
+[data-theme="light"] [class*="bg-foreground"][style*="transform"] {
+    background: var(--cream-mint-progress-fill) !important;
+    background-color: hsl(var(--heroui-progress-indicator)) !important;
+    border-radius: 9999px !important;
+}
+
+/* 自定义进度条兜底：没有 inline width，但具有 h-* + rounded + 黑色背景的水平条 */
+.light [class*="bg-black"][class*="rounded"][class*="h-1"],
+[data-theme="light"] [class*="bg-black"][class*="rounded"][class*="h-1"],
+.light [class*="bg-black"][class*="rounded"][class*="h-2"],
+[data-theme="light"] [class*="bg-black"][class*="rounded"][class*="h-2"],
+.light [class*="bg-black"][class*="rounded"][class*="h-3"],
+[data-theme="light"] [class*="bg-black"][class*="rounded"][class*="h-3"],
+.light [class*="bg-black"][class*="rounded"][class*="h-4"],
+[data-theme="light"] [class*="bg-black"][class*="rounded"][class*="h-4"],
+.light [class*="bg-foreground"][class*="rounded"][class*="h-1"],
+[data-theme="light"] [class*="bg-foreground"][class*="rounded"][class*="h-1"],
+.light [class*="bg-foreground"][class*="rounded"][class*="h-2"],
+[data-theme="light"] [class*="bg-foreground"][class*="rounded"][class*="h-2"],
+.light [class*="bg-foreground"][class*="rounded"][class*="h-3"],
+[data-theme="light"] [class*="bg-foreground"][class*="rounded"][class*="h-3"],
+.light [class*="bg-foreground"][class*="rounded"][class*="h-4"],
+[data-theme="light"] [class*="bg-foreground"][class*="rounded"][class*="h-4"] {
+    background: var(--cream-mint-progress-fill) !important;
+    background-color: hsl(var(--heroui-progress-indicator)) !important;
+    border-radius: 9999px !important;
+}
+
+/* 处理 inline style 写死黑色的进度条 */
+.light [style*="width"][style*="background: black"],
+[data-theme="light"] [style*="width"][style*="background: black"],
+.light [style*="width"][style*="background-color: black"],
+[data-theme="light"] [style*="width"][style*="background-color: black"],
+.light [style*="width"][style*="background:#000"],
+[data-theme="light"] [style*="width"][style*="background:#000"],
+.light [style*="width"][style*="background: #000"],
+[data-theme="light"] [style*="width"][style*="background: #000"],
+.light [style*="width"][style*="background-color:#000"],
+[data-theme="light"] [style*="width"][style*="background-color:#000"],
+.light [style*="width"][style*="background-color: #000"],
+[data-theme="light"] [style*="width"][style*="background-color: #000"],
+.light [style*="width"][style*="background: rgb(0, 0, 0)"],
+[data-theme="light"] [style*="width"][style*="background: rgb(0, 0, 0)"],
+.light [style*="width"][style*="background-color: rgb(0, 0, 0)"],
+[data-theme="light"] [style*="width"][style*="background-color: rgb(0, 0, 0)"] {
+    background: var(--cream-mint-progress-fill) !important;
+    background-color: hsl(var(--heroui-progress-indicator)) !important;
+    border-radius: 9999px !important;
+}
+
+/* 进度条轨道如果写死为灰白，也统一到奶油灰 */
+.light [class*="progress"][class*="track"],
+[data-theme="light"] [class*="progress"][class*="track"],
+.light [class*="Progress"][class*="Track"],
+[data-theme="light"] [class*="Progress"][class*="Track"] {
+    background-color: hsl(var(--heroui-progress-track)) !important;
+}
